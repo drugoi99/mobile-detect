@@ -18,10 +18,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    detect_mobile = DetectMobile()
-    request.MOBILE = detect_mobile.is_mobile()
-    request.MOBILE_DEVICE = detect_mobile.device
-    request.MOBILE_OS = detect_mobile.os
+    mobile_detect = MobileDetect()
+    request.MOBILE = mobile_detect.is_mobile()
+    request.MOBILE_DEVICE = mobile_detect.device
+    request.MOBILE_OS = mobile_detect.os
     
     template = '/%sindex.html' % ('mobile/' if request.MOBILE else '')
     return render_template('index.html')
