@@ -125,6 +125,7 @@ class MobileDetect:
             'INQ':  'INQ',
             'OnePlus':  'ONEPLUS',
             'GenericPhone':  'Tapatalk|PDA;|SAGEM|mmp|pocket|psp|symbian|Smartphone|smartfon|treo|up.browser|up.link|vodafone|wap|nokia|Series40|Series60|S60|SonyEricsson|N900|MAUI.*WAP.*Browser',
+            'OtherPhoneDevice': 'Mobile|iP(hone|od|ad)|Android|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune',
         }
         self.tabletDevices = {
             'iPad': 'iPad|iPad.*Mobile',
