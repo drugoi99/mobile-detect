@@ -410,15 +410,15 @@ class MobileDetect:
 
     def is_mobile(self):
         mobile = False
-        phone = self.is_phone()
-        if phone is False:
-            tablet = self.is_tablet()
-            if tablet is False:
+        tablet = self.is_tablet()
+        if tablet is False:
+            phone = self.is_phone()
+            if phone is False:
                 self.device = 'Desktop'
             else:
                 mobile = True
-                self.device = 'Tablet'
+                self.device = 'Phone'
         else:
             mobile = True
-            self.device = 'Phone'
+            self.device = 'Tablet'
         return mobile
